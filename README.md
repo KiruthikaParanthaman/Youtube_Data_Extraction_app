@@ -34,7 +34,9 @@ is available through channel,video,playlist and comment radiobutton
 **Data Analysis:** Users can find answers to their general queries like which is the most liked video,most commented video,most viewed videos and so on through selecting the appropriate question from the
 list of 10 predefined questions
 `
+
 **Challenges and Learning:**
+
 1. Challenge: Google API key restricts data retrieval to 10000 requests per day
    Approach : In regards to the constraint, all channels were chosen with maximum of 500 videos so as not to exceed the quota limit for the day
 2. Challenge : Data Integrity and Data Duplication to be maintained while storing data in Mongodb and Mysql
@@ -42,4 +44,4 @@ list of 10 predefined questions
    Users were cautioned and prevented from storing same data twice.Data Integration was enabled by specifying Primary keys in both databases
 3. Challenge : Conversion of Un structured data to structured data
    Approach  : Pandas has MysqlAlchemy library which enabes user to convert unstructured data to Sql format. However for this project, existing Pandas, Numpy features were used for conversion
-4. Learnings : Extract,Transform,
+4. Learnings : Extract,Transform and Load(ETL) process,python Pandas,Mongodb, Mysql databse, Streamlit application features

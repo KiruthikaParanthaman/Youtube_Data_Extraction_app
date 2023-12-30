@@ -34,3 +34,7 @@ is available through channel,video,playlist and comment radiobutton
 **Data Analysis:** Users can find answers to their general queries like which is the most liked video,most commented video,most viewed videos and so on through selecting the appropriate question from the
 list of 10 predefined questions
 `
+**Challenges and Learning:**
+1. Challenge: Google API key restricts data retrieval to 10000 requests per day
+   Approach : In regards to the constraint, all channels were chosen with maximum of 500 videos so as not to exceed the quota limit for the day
+2. Challenge : 

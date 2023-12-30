@@ -22,7 +22,15 @@ search options, including joining tables to get channel details.
 ![project screenshot](https://github.com/KiruthikaParanthaman/Youtube_Data_Extraction_app/assets/141828622/e271a975-d217-41fb-ba4f-5d0a11a49f79)
 
 **Take a Tour of options:**
+
 **Home :** Home option gives overview of the features of the youtube Data Extraction application
-**Search and store in Mongodb :** Search and store in Mongodb enables user to enter channel_id or choose from the list of sample channel list. When channel is chosen, Store in Mongodb button is enabled which   
-  enables user to store data in Mongodb
+
+**Search and store in Mongodb :** Search and store in Mongodb enables user to enter channel_id or choose from the list of sample channel list. When channel is chosen, Store in Mongodb button is enabled
+which enables user to store data in Mongodb
+
+**Migrate Data to Sql :** Migrate data to sql option provides list of channel names already stored in Mongodb and user can select channels to migrate to Mysql. Sample preview of datas stored in Mysql
+is available through channel,video,playlist and comment radiobutton
+
+**Data Analysis:** Users can find answers to their general queries like which is the most liked video,most commented video,most viewed videos and so on through selecting the appropriate question from the
+list of 10 predefined questions
 `

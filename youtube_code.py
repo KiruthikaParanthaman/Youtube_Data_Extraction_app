@@ -155,7 +155,7 @@ def to_mongodb(channel_id):
 
 #function to check existence of database in mysql database
 def sql_db_check():
-    mydb = mysql.connector.connect(host="localhost",user="root",password="Nila@3110")
+    mydb = mysql.connector.connect(host="localhost",user="root",password="*******")
     mycursor = mydb.cursor()
     try:
         mycursor.execute("USE youtube_project")
@@ -166,7 +166,7 @@ def sql_db_check():
 
 #create youtube_project database and create tables channel,playlist,videos and comments:
 def mysql_table_creation():
-    mydb = mysql.connector.connect(host="localhost",user="root",password="Nila@3110")
+    mydb = mysql.connector.connect(host="localhost",user="root",password="*******")
     mycursor = mydb.cursor()
     mycursor.execute("CREATE DATABASE youtube_project")
     mydb = mysql_connection()
@@ -186,7 +186,7 @@ def mysql_table_creation():
 
 #function for establishing connection sql database youtube_project
 def mysql_connection():
-    mydb = mysql.connector.connect(host="localhost",user="root",password="Nila@3110",database = "youtube_project")
+    mydb = mysql.connector.connect(host="localhost",user="root",password="******",database = "youtube_project")
     return mydb
 
 #function to store channel details to mysql databse

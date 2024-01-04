@@ -44,4 +44,4 @@ list of 10 predefined questions
    Users were cautioned and prevented from storing same data twice.Data Integration was enabled by specifying Primary keys in both databases
 3. Challenge : Conversion of Un structured data to structured data
    Approach  : Pandas has MysqlAlchemy library which enabes user to convert unstructured data to Sql format. However for this project, existing Pandas, Numpy features were used for conversion
-4. Learnings : Extract,Transform and Load(ETL) process,python Pandas,Mongodb, Mysql databse, Streamlit application features
+4. Learnings : Extract,Transform and Load(ETL) process,python Pandas,Mongodb, Mysql database, Streamlit application features

@@ -279,7 +279,7 @@ def channels_from_mongodb():
     return channel_name_list
 
 #main function call to store all datas in Mysql
-#receives user input and uses session state to check whether channel has already been stored in mongodb database
+#receives user input and uses channel primary parameter error to check whether channel has already been stored in mongodb database
 def to_sql(user_inputs):
     check = sql_db_check()
     if check == 1:
@@ -291,7 +291,7 @@ def to_sql(user_inputs):
         else:
             print("Error creating database")
     for i in range(len(user_inputs)):
-        if user_inputs[i] not in st.session_state:            
+        try:            
             mycollection = mongodb_connection()
             data_from_mongodb = list(mycollection.find({'channel_details.channel_name':user_inputs[i]},{'_id':0}))
             channel_details = data_from_mongodb[0]['channel_details']
@@ -305,7 +305,7 @@ def to_sql(user_inputs):
             comments_table = comments_sql_table(comments_details)
             st.session_state[user_inputs[i]]=i
             flag = 1 #successfully stored
-        else:
+        except:
             flag = 0
     return flag
 

@@ -40,8 +40,7 @@ list of 10 predefined questions
 1. Challenge: Google API key restricts data retrieval to 10000 requests per day
    Approach : In regards to the constraint, all channels were chosen with maximum of 500 videos so as not to exceed the quota limit for the day
 2. Challenge : Data Integrity and Data Duplication to be maintained while storing data in Mongodb and Mysql
-   Approach  : St.session state of Mongodb was used to prevent users from storing same channels twice in Mongodb. A pre-check with list of stored channel names was made before storing data in Mysql.
-   Users were cautioned and prevented from storing same data twice.Data Integration was enabled by specifying Primary keys in both databases
+   Approach  : St.session state of Mongodb was used to prevent users from storing same channels twice in Mongodb.Users were cautioned and prevented from storing same data twice.Data Integration was enabled by specifying Primary keys in both databases
 3. Challenge : Conversion of Un structured data to structured data
    Approach  : Pandas has MysqlAlchemy library which enabes user to convert unstructured data to Sql format. However for this project, existing Pandas, Numpy features were used for conversion
 4. Learnings : Extract,Transform and Load(ETL) process,python Pandas,Mongodb, Mysql database, Streamlit application features
